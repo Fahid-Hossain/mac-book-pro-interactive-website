@@ -16,13 +16,13 @@
 
     </header>
     <main>
-        <section class="mt-5">
-            <div class="container">
+        <section class="m-5">
+            <div class="">
 
-                <div class="d-flex">
+                <div class="d-lg-flex d-md-block">
 
                     <div class="">
-                        <img class="img-fluid pe-5" src="images/mac.png" alt="">
+                        <img class="img-fluid pe-4" src="images/mac.png" alt="">
                     </div>
                     <div class="mb-5">
                         <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
@@ -35,33 +35,51 @@
                         <!-- // Memory option  -->
                         <div class="mt-5">
                             <h3>Memory</h3>
-                            <button id="memory8GB-btn" type="button" class="btn btn-outline-dark w-25 mt-2">8GB unified memory</button>
-                            <button id="memory16GB-btn" type="button" class="btn btn-outline-dark w-50 mt-2">16GB unified memory</button>
+
+                            <div class="d-grid d-md-block gap-2 col-12 mx-auto">
+
+                                <button id="memory8GB-btn" type="button" class="btn btn-outline-dark mt-2">8GB unified
+                                    memory</button>
+                                <button id="memory16GB-btn" type="button" class="btn btn-outline-dark mt-2">16GB unified
+                                    memory</button>
+                            </div>
 
                         </div>
 
                         <!-- // Storage option  -->
                         <div class="mt-5">
                             <h3 class="">Storage</h3>
-                            <button id="storage256-btn" type="button" class="btn btn-outline-dark w-25 mt-2">256GB SSD storage</button>
-                            <button id="storage512-btn" type="button" class="btn btn-outline-dark w-25 mt-2">512GB SSD storage</button>
-                            <button id="storage1000-btn" type="button" class="btn btn-outline-dark w-25 mt-2">1TB SSD storage</button>
+
+                            <div class="d-grid d-md-block gap-2 col-12 mx-auto">
+                                <button id="storage256-btn" type="button" class="btn btn-outline-dark mt-2">256GB SSD
+                                    storage</button>
+                                <button id="storage512-btn" type="button" class="btn btn-outline-dark mt-2">512GB SSD
+                                    storage</button>
+                                <button id="storage1000-btn" type="button" class="btn btn-outline-dark mt-2">1TB SSD
+                                    storage</button>
+                            </div>
 
                         </div>
 
                         <!-- //delivery option  -->
                         <div class="mt-5">
                             <h3 class="">Choose your delivery option</h3>
-                            <button id="delivery25-btn" type="button" class="btn btn-outline-dark w-75 mt-2">Friday,Aug 25 FREE Prime
-                                delivery</button>
+                            <div class="d-grid d-md-block gap-2 col-12 mx-auto">
+                                <button id="delivery25-btn" type="button"
+                                    class="btn btn-outline-dark mt-2">Friday,Aug
+                                    25 FREE Prime
+                                    delivery</button>
 
-                            <button id="delivery21-btn" type="button" class="btn btn-outline-dark w-75 mt-2">Friday,Aug 21 delivery Charge
-                                $20</button>
+                                <button id="delivery21-btn" type="button"
+                                    class="btn btn-outline-dark mt-2">Friday,Aug
+                                    21 delivery Charge
+                                    $20</button>
+                            </div>
 
                         </div>
 
                         <!-- //table  -->
-                        <table class="table table-borderless mt-5 w-50 mb-5">
+                        <table class="table table-borderless mt-5 mb-5 w-auto">
                             <thead>
                                 <tr>
                                     <th scope="col">Best Price</th>
@@ -85,25 +103,25 @@
                                     <td class="fw-bold">Total Price</td>
                                     <td class="fw-bold">$<span id="total-cost">1299</span></td>
                                 </tr>
-                                
+
                             </tbody>
                         </table>
 
                         <!-- // Promo code  -->
-                       <div>
-                        <h4>Add promo code</h4>
-                        <input id="promo-input" class="p-2" type="text"> 
-                        <button id="promo-btn" type="button" class="btn btn-danger">Apply</button>
-                       </div>
+                        <div>
+                            <h4>Add promo code</h4>
+                            <input id="promo-input" class="p-2" type="text">
+                            <button id="promo-btn" type="button" class="btn btn-danger">Apply</button>
+                        </div>
 
                     </div>
 
                 </div>
             </div>
-        </section>          
+        </section>
     </main>
     <!-- //total amount with discount -->
-        <h2 class="text-center w-75 mb-5">Total:$<span id="total-amount">1299</span></h2>
+    <h2 class="text-center w-75 mb-5">Total:$<span id="total-amount">1299</span></h2>
 
     <!-- js script ....  -->
     <script src="js/main.js"></script>
