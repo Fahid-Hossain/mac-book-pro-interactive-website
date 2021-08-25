@@ -12,7 +12,7 @@ function getUpdateDetails(){
     //memory cost
     let memoryCostId = document.getElementById("memory-cost");
     let memoryCost = parseInt(memoryCostId.innerText);
-    console.log(memoryCost);
+    // console.log(memoryCost);
     //delivery cost 
     let deliveryCostId = document.getElementById("delivery-cost");
     let deliverCost = parseInt(deliveryCostId.innerText);
@@ -80,14 +80,16 @@ document.getElementById("delivery21-btn").addEventListener("click", function () 
 document.getElementById("promo-btn").addEventListener("click", function(){
     let promoInput = document.getElementById("promo-input");
     let promoInputValue = promoInput.value;
-    //get total price
-    let totalAmountId = document.getElementById("total-amount");
-    let totalAmount = totalAmountId.innerText;
 
+    //get total price
+    let totalCostId = document.getElementById("total-cost");
+    let totalCost = totalCostId.innerText;
+    //get final total
+    let totalAmountId = document.getElementById("total-amount");
     //get discount (20%)
-    let discount = (totalAmount * 20) / 100;
+    let discount = (totalCost * 20) / 100;
     // Discount Amount
-    let discountAmount = totalAmount - discount;
+    let discountAmount = totalCost - discount;
 
     //promo code validation check
     if (promoInput.value == "stevekaku") {
